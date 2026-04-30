@@ -1375,7 +1375,7 @@ function playSfx(el, vol){
   const shuffle=(arr)=>{ const A=arr.slice(); for(let i=A.length-1;i>0;i--){ const j=(Math.random()*(i+1))|0; [A[i],A[j]]=[A[j],A[i]] } return A };
 
 /* ===== พูลรูปภาพต่อด่าน: data1, data2, data3 (word1..word50) ===== */
-const IMG_EXT = '.png';                           // ถ้ารูปเป็น .webp หรือ .jpg เปลี่ยนตรงนี้
+const IMG_EXT = '.webp';   
 function buildPool(dir, count=50, ext=IMG_EXT){
   const m = new Map();                            // key: 'word1' → path 'data1/word1.png'
   for(let i=1;i<=count;i++){
