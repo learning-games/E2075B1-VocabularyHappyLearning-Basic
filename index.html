@@ -2987,9 +2987,9 @@ function endRound(ok, pickedElOrNull, timeout=false){
   stopTimebar();
 
 if (ok) {
-  score += 2;
+  score += 1;
 } else {
-  score = Math.max(0, score - 2);
+  score = Math.max(0, score - 1);
 }
 
   updateHUD();
