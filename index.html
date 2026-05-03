@@ -1154,7 +1154,7 @@ button:active,
 
 <!-- ===== ภารกิจ / หน้าเริ่ม ===== -->
 <div id="startScreen">
-  <div id="startTitle">ภารกิจ : เลือกวงกลมคำตอบจำแนกสิ่งมีชีวิตให้ถูกต้อง</div>
+  <div id="startTitle">ภารกิจ : เลือกรูปภาพให้ตรงกับคำศัพท์</div>
   <button id="startBtn">เริ่ม</button>
   <div id="countdown">3</div>
 </div>
@@ -1926,7 +1926,7 @@ function flyScoreForEl(el, ok){
 
 
 /* ===== Emoji reward (ขนม) ===== */
-const REWARD_EMOJIS = ['💰'];
+const REWARD_EMOJIS = ['⭐', '🏆', '💎', '🍀'];
 
 function pickEmoji(){
   return REWARD_EMOJIS[(Math.random() * REWARD_EMOJIS.length) | 0];
